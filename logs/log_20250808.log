@@ -1,0 +1,915 @@
+2025-08-08 03:39:24,029 - INFO - LLM 初始化完成
+2025-08-08 03:39:24,066 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 03:39:24,396 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 03:39:24,397 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-08-08 03:39:24,397 - INFO - 知识库检索系统初始化完成
+2025-08-08 03:39:24,397 - INFO - 知识库检索器初始化成功
+2025-08-08 03:40:45,450 - INFO - LLM 初始化完成
+2025-08-08 03:40:45,465 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 03:40:45,549 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 03:40:45,549 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 03:40:45,549 - INFO - 知识库检索系统初始化完成
+2025-08-08 03:40:45,550 - INFO - 知识库检索器初始化成功
+2025-08-08 03:47:28,142 - INFO - LLM 初始化完成
+2025-08-08 03:47:28,156 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 03:47:28,272 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 03:47:28,277 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 03:47:28,277 - INFO - 知识库检索系统初始化完成
+2025-08-08 03:47:28,277 - INFO - 知识库检索器初始化成功
+2025-08-08 03:48:10,793 - INFO - LLM 初始化完成
+2025-08-08 03:48:10,809 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 03:48:11,041 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 03:48:11,042 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 03:48:11,042 - INFO - 知识库检索系统初始化完成
+2025-08-08 03:48:11,042 - INFO - 知识库检索器初始化成功
+2025-08-08 03:48:27,032 - INFO - LLM 初始化完成
+2025-08-08 03:48:27,045 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 03:48:27,128 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 03:48:27,129 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 03:48:27,129 - INFO - 知识库检索系统初始化完成
+2025-08-08 03:48:27,129 - INFO - 知识库检索器初始化成功
+2025-08-08 06:07:40,328 - INFO - LLM 初始化完成
+2025-08-08 06:07:40,360 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 06:07:40,634 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:07:40,644 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 06:07:40,644 - INFO - 知识库检索系统初始化完成
+2025-08-08 06:07:40,644 - INFO - 知识库检索器初始化成功
+2025-08-08 06:09:22,839 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:09:22,839 - INFO - 正在设置检索器...
+2025-08-08 06:09:22,840 - INFO - 创建docstore目录: ./chroma_db/docstore
+2025-08-08 06:09:22,852 - INFO - 新建集合，加载文档
+2025-08-08 06:09:22,853 - INFO - 正在从 /mnt/afs/code/yjn/dianxin_QA/data/知识内容 加载文档...
+2025-08-08 06:09:22,853 - INFO - 找到 0 个DOCX文件
+2025-08-08 06:09:22,854 - INFO - 总共加载了 0 个文档片段
+2025-08-08 06:09:22,854 - ERROR - 加载集合 DIANXIN_QA_0808 失败: 没有加载到文档，请检查数据目录
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 261, in _update_collection_retrieve
+    assert len(documents) > 0, "没有加载到文档，请检查数据目录"
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: 没有加载到文档，请检查数据目录
+2025-08-08 06:09:22,855 - ERROR - 单问题处理出错: 无法强制更新集合 DIANXIN_QA_0808
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 261, in _update_collection_retrieve
+    assert len(documents) > 0, "没有加载到文档，请检查数据目录"
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: 没有加载到文档，请检查数据目录
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 469, in single_qa
+    ensemble_retriever = self.route_retrieve(collection_name, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 298, in route_retrieve
+    retriever = self.get_retriever(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/utils/modules.py", line 213, in get_retriever
+    raise RuntimeError(f"无法强制更新集合 {collection_name}") from e
+RuntimeError: 无法强制更新集合 DIANXIN_QA_0808
+2025-08-08 06:11:08,917 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:11:08,917 - INFO - 正在设置检索器...
+2025-08-08 06:11:08,920 - INFO - 新建集合，加载文档
+2025-08-08 06:11:08,921 - INFO - 正在从 /app/data/知识内容 加载文档...
+2025-08-08 06:11:08,921 - INFO - 找到 16 个DOCX文件
+2025-08-08 06:11:08,921 - INFO - 注意以下非docx文件不会加载：
+.DS_Store
+国际漫游流量包-201805新版 .doc
+新版港澳台流量包-201906 .doc
+.DS_Store
+违章停机类型及服务口径对应表.doc
+2025-08-08 06:14:14,514 - INFO - LLM 初始化完成
+2025-08-08 06:14:14,535 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 06:14:14,761 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:14:14,761 - WARNING - 预加载集合 DIANXIN_QA_0806 失败: division by zero
+2025-08-08 06:14:14,761 - INFO - 知识库检索系统初始化完成
+2025-08-08 06:14:14,762 - INFO - 知识库检索器初始化成功
+2025-08-08 06:18:22,090 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:18:22,091 - INFO - 正在设置检索器...
+2025-08-08 06:18:22,094 - INFO - 新建集合，加载文档
+2025-08-08 06:18:22,094 - INFO - 正在从 /app/data/知识内容 加载文档...
+2025-08-08 06:18:22,094 - INFO - 找到 16 个DOCX文件
+2025-08-08 06:18:22,094 - INFO - 注意以下非docx文件不会加载：
+.DS_Store
+国际漫游流量包-201805新版 .doc
+新版港澳台流量包-201906 .doc
+.DS_Store
+违章停机类型及服务口径对应表.doc
+2025-08-08 06:18:22,095 - ERROR - 加载集合 DIANXIN_QA_0808 失败: unstructured package not found, please install it with `pip install unstructured`
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 59, in __init__
+    import unstructured  # noqa:F401
+    ^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'unstructured'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 259, in _update_collection_retrieve
+    documents = self.load_documents(knowledge_base_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 170, in load_documents
+    loader = UnstructuredWordDocumentLoader(docx_file,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/word_document.py", line 113, in __init__
+    super().__init__(file_path=file_path, mode=mode, **unstructured_kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 223, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 213, in __init__
+    super().__init__(mode=mode, **unstructured_kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 61, in __init__
+    raise ImportError(
+ImportError: unstructured package not found, please install it with `pip install unstructured`
+2025-08-08 06:18:22,100 - ERROR - 单问题处理出错: 无法强制更新集合 DIANXIN_QA_0808
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 59, in __init__
+    import unstructured  # noqa:F401
+    ^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'unstructured'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 259, in _update_collection_retrieve
+    documents = self.load_documents(knowledge_base_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 170, in load_documents
+    loader = UnstructuredWordDocumentLoader(docx_file,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/word_document.py", line 113, in __init__
+    super().__init__(file_path=file_path, mode=mode, **unstructured_kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 223, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 213, in __init__
+    super().__init__(mode=mode, **unstructured_kwargs)
+  File "/usr/local/lib/python3.11/site-packages/langchain_community/document_loaders/unstructured.py", line 61, in __init__
+    raise ImportError(
+ImportError: unstructured package not found, please install it with `pip install unstructured`
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 469, in single_qa
+    ensemble_retriever = self.route_retrieve(collection_name, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 298, in route_retrieve
+    retriever = self.get_retriever(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/utils/modules.py", line 213, in get_retriever
+    raise RuntimeError(f"无法强制更新集合 {collection_name}") from e
+RuntimeError: 无法强制更新集合 DIANXIN_QA_0808
+2025-08-08 06:19:39,853 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:19:39,853 - INFO - 正在设置检索器...
+2025-08-08 06:19:39,856 - INFO - 新建集合，加载文档
+2025-08-08 06:19:39,856 - INFO - 正在从 /app/data/知识内容 加载文档...
+2025-08-08 06:19:39,857 - INFO - 找到 16 个DOCX文件
+2025-08-08 06:19:39,857 - INFO - 注意以下非docx文件不会加载：
+.DS_Store
+国际漫游流量包-201805新版 .doc
+新版港澳台流量包-201906 .doc
+.DS_Store
+违章停机类型及服务口径对应表.doc
+2025-08-08 06:19:46,279 - ERROR - 加载 /app/data/知识内容/国漫流量包/中国电信APP渠道国际及中国港澳台漫游包客服预案.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,292 - ERROR - 加载 /app/data/知识内容/国漫流量包/关于国际漫游流量包天资费的高速流量配额说明（内部参考).docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,305 - ERROR - 加载 /app/data/知识内容/国漫流量包/关于开展国际漫游业务及港澳台漫游业务暑期促销活动的通知.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,318 - ERROR - 加载 /app/data/知识内容/国漫流量包/国际漫游受理思路.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,331 - ERROR - 加载 /app/data/知识内容/国漫流量包/2018年5月1日国际及港澳台地区漫游流量资费调整方案.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,346 - ERROR - 加载 /app/data/知识内容/国漫流量包/.~港澳台流量包-201906 .docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,359 - ERROR - 加载 /app/data/知识内容/国漫流量包/国际漫游、港澳台漫游拨号方式-语音、短信、数据.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,375 - ERROR - 加载 /app/data/知识内容/国漫流量包/国际漫游流量包-201805新版 .docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,388 - ERROR - 加载 /app/data/知识内容/国漫流量包/新版港澳台流量包-201906 .docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,401 - ERROR - 加载 /app/data/知识内容/国漫流量包/自主漫游业务.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,414 - ERROR - 加载 /app/data/知识内容/国漫流量包/2022年8月新增国际港澳台漫游流量包和语音包.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,427 - ERROR - 加载 /app/data/知识内容/安防停机/违章停机类型及服务口径对应表.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,440 - ERROR - 加载 /app/data/知识内容/安防停机/.~安防停机.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,452 - ERROR - 加载 /app/data/知识内容/安防停机/反诈模型停机线下复机能力介绍.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,465 - ERROR - 加载 /app/data/知识内容/安防停机/安防停机.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,478 - ERROR - 加载 /app/data/知识内容/安防停机/客服接应安防停机应答口径.docx 时出错: No module named 'docx'
+2025-08-08 06:19:46,478 - INFO - 总共加载了 0 个文档片段
+2025-08-08 06:19:46,478 - ERROR - 加载集合 DIANXIN_QA_0808 失败: 没有加载到文档，请检查数据目录
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 261, in _update_collection_retrieve
+    assert len(documents) > 0, "没有加载到文档，请检查数据目录"
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: 没有加载到文档，请检查数据目录
+2025-08-08 06:19:46,479 - ERROR - 单问题处理出错: 无法强制更新集合 DIANXIN_QA_0808
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 261, in _update_collection_retrieve
+    assert len(documents) > 0, "没有加载到文档，请检查数据目录"
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: 没有加载到文档，请检查数据目录
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 469, in single_qa
+    ensemble_retriever = self.route_retrieve(collection_name, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 298, in route_retrieve
+    retriever = self.get_retriever(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/utils/modules.py", line 213, in get_retriever
+    raise RuntimeError(f"无法强制更新集合 {collection_name}") from e
+RuntimeError: 无法强制更新集合 DIANXIN_QA_0808
+2025-08-08 06:21:26,621 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:21:26,621 - INFO - 正在设置检索器...
+2025-08-08 06:21:26,624 - INFO - 新建集合，加载文档
+2025-08-08 06:21:26,624 - INFO - 正在从 /app/data/知识内容 加载文档...
+2025-08-08 06:21:26,625 - INFO - 找到 16 个DOCX文件
+2025-08-08 06:21:26,625 - INFO - 注意以下非docx文件不会加载：
+.DS_Store
+国际漫游流量包-201805新版 .doc
+新版港澳台流量包-201906 .doc
+.DS_Store
+违章停机类型及服务口径对应表.doc
+2025-08-08 06:28:13,549 - INFO - /app/data/知识内容/国漫流量包/中国电信APP渠道国际及中国港澳台漫游包客服预案.docx 共加载 89 个原始 element
+2025-08-08 06:28:13,549 - INFO - 成功加载: /app/data/知识内容/国漫流量包/中国电信APP渠道国际及中国港澳台漫游包客服预案.docx
+2025-08-08 06:28:14,497 - INFO - /app/data/知识内容/国漫流量包/关于国际漫游流量包天资费的高速流量配额说明（内部参考).docx 共加载 35 个原始 element
+2025-08-08 06:28:14,497 - INFO - 成功加载: /app/data/知识内容/国漫流量包/关于国际漫游流量包天资费的高速流量配额说明（内部参考).docx
+2025-08-08 06:28:15,821 - INFO - /app/data/知识内容/国漫流量包/关于开展国际漫游业务及港澳台漫游业务暑期促销活动的通知.docx 共加载 38 个原始 element
+2025-08-08 06:28:15,822 - INFO - 成功加载: /app/data/知识内容/国漫流量包/关于开展国际漫游业务及港澳台漫游业务暑期促销活动的通知.docx
+2025-08-08 06:28:16,264 - INFO - /app/data/知识内容/国漫流量包/国际漫游受理思路.docx 共加载 114 个原始 element
+2025-08-08 06:28:16,265 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游受理思路.docx
+2025-08-08 06:28:16,460 - INFO - /app/data/知识内容/国漫流量包/2018年5月1日国际及港澳台地区漫游流量资费调整方案.docx 共加载 13 个原始 element
+2025-08-08 06:28:16,460 - INFO - 成功加载: /app/data/知识内容/国漫流量包/2018年5月1日国际及港澳台地区漫游流量资费调整方案.docx
+2025-08-08 06:28:16,475 - ERROR - 加载 /app/data/知识内容/国漫流量包/.~港澳台流量包-201906 .docx 时出错: not a ZIP archive (so not a DOCX file): '/app/data/知识内容/国漫流量包/.~港澳台流量包-201906\xa0.docx'
+2025-08-08 06:28:16,911 - INFO - /app/data/知识内容/国漫流量包/国际漫游、港澳台漫游拨号方式-语音、短信、数据.docx 共加载 26 个原始 element
+2025-08-08 06:28:16,911 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游、港澳台漫游拨号方式-语音、短信、数据.docx
+2025-08-08 06:28:17,174 - INFO - /app/data/知识内容/国漫流量包/国际漫游流量包-201805新版 .docx 共加载 29 个原始 element
+2025-08-08 06:28:17,174 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游流量包-201805新版 .docx
+2025-08-08 06:28:17,255 - INFO - /app/data/知识内容/国漫流量包/新版港澳台流量包-201906 .docx 共加载 28 个原始 element
+2025-08-08 06:28:17,256 - INFO - 成功加载: /app/data/知识内容/国漫流量包/新版港澳台流量包-201906 .docx
+2025-08-08 06:28:17,681 - INFO - /app/data/知识内容/国漫流量包/自主漫游业务.docx 共加载 86 个原始 element
+2025-08-08 06:28:17,682 - INFO - 成功加载: /app/data/知识内容/国漫流量包/自主漫游业务.docx
+2025-08-08 06:28:17,935 - INFO - /app/data/知识内容/国漫流量包/2022年8月新增国际港澳台漫游流量包和语音包.docx 共加载 81 个原始 element
+2025-08-08 06:28:17,935 - INFO - 成功加载: /app/data/知识内容/国漫流量包/2022年8月新增国际港澳台漫游流量包和语音包.docx
+2025-08-08 06:28:19,184 - INFO - /app/data/知识内容/安防停机/违章停机类型及服务口径对应表.docx 共加载 195 个原始 element
+2025-08-08 06:28:19,185 - INFO - 成功加载: /app/data/知识内容/安防停机/违章停机类型及服务口径对应表.docx
+2025-08-08 06:28:19,198 - ERROR - 加载 /app/data/知识内容/安防停机/.~安防停机.docx 时出错: not a ZIP archive (so not a DOCX file): '/app/data/知识内容/安防停机/.~安防停机.docx'
+2025-08-08 06:28:19,274 - INFO - /app/data/知识内容/安防停机/反诈模型停机线下复机能力介绍.docx 共加载 43 个原始 element
+2025-08-08 06:28:19,275 - INFO - 成功加载: /app/data/知识内容/安防停机/反诈模型停机线下复机能力介绍.docx
+2025-08-08 06:28:19,461 - INFO - /app/data/知识内容/安防停机/安防停机.docx 共加载 111 个原始 element
+2025-08-08 06:28:19,461 - INFO - 成功加载: /app/data/知识内容/安防停机/安防停机.docx
+2025-08-08 06:28:19,613 - INFO - /app/data/知识内容/安防停机/客服接应安防停机应答口径.docx 共加载 32 个原始 element
+2025-08-08 06:28:19,614 - INFO - 成功加载: /app/data/知识内容/安防停机/客服接应安防停机应答口径.docx
+2025-08-08 06:28:19,614 - INFO - 总共加载了 920 个文档片段
+2025-08-08 06:28:19,614 - INFO - 正在添加文档到向量检索器...
+2025-08-08 06:28:24,104 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:28:33,854 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:28:33,854 - DEBUG - Building prefix dict from the default dictionary ...
+2025-08-08 06:28:33,854 - DEBUG - Loading model from cache ./config/jieba.cache
+2025-08-08 06:28:34,688 - DEBUG - Loading model cost 0.834 seconds.
+2025-08-08 06:28:34,688 - DEBUG - Prefix dict has been built successfully.
+2025-08-08 06:28:35,174 - INFO - 正在初始化混合检索器...
+2025-08-08 06:28:35,174 - INFO - 检索器设置完成
+2025-08-08 06:28:35,176 - INFO - 集合 DIANXIN_QA_0808 加载成功
+2025-08-08 06:28:35,192 - ERROR - 单问题处理出错: 处理问题时出错: Unable to import langchain_openai. Please install with `pip install -U langchain-openai`
+Traceback (most recent call last):
+  File "/app/kag_app.py", line 471, in single_qa
+    ref_docs, prompt = self.route_question_retrieve(ensemble_retriever, question)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 385, in route_question_retrieve
+    answer = self.chat_llm.invoke(prompt_)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/chat_models/base.py", line 685, in invoke
+    return self._model(config).invoke(input, config=config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/chat_models/base.py", line 611, in _model
+    model = _init_chat_model_helper(**params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/chat_models/base.py", line 348, in _init_chat_model_helper
+    _check_pkg("langchain_openai")
+  File "/usr/local/lib/python3.11/site-packages/langchain/chat_models/base.py", line 543, in _check_pkg
+    raise ImportError(msg)
+ImportError: Unable to import langchain_openai. Please install with `pip install -U langchain-openai`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 491, in single_qa
+    raise ValueError(f"处理问题时出错: {e}")
+ValueError: 处理问题时出错: Unable to import langchain_openai. Please install with `pip install -U langchain-openai`
+2025-08-08 06:32:21,602 - INFO - LLM 初始化完成
+2025-08-08 06:32:21,757 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-08-08 06:32:22,864 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:32:22,865 - DEBUG - Building prefix dict from the default dictionary ...
+2025-08-08 06:32:22,865 - DEBUG - Loading model from cache ./config/jieba.cache
+2025-08-08 06:32:23,717 - DEBUG - Loading model cost 0.852 seconds.
+2025-08-08 06:32:23,717 - DEBUG - Prefix dict has been built successfully.
+2025-08-08 06:32:24,801 - INFO - 正在初始化混合检索器...
+2025-08-08 06:32:24,801 - INFO - 检索器设置完成
+2025-08-08 06:32:24,804 - INFO - 知识库检索系统初始化完成
+2025-08-08 06:32:24,804 - INFO - 知识库检索器初始化成功
+2025-08-08 06:32:25,649 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:32:25,649 - INFO - 正在设置检索器...
+2025-08-08 06:32:25,653 - INFO - 新建集合，加载文档
+2025-08-08 06:32:25,653 - INFO - 正在从 /app/data/知识内容 加载文档...
+2025-08-08 06:32:25,656 - INFO - 找到 16 个DOCX文件
+2025-08-08 06:32:25,656 - INFO - 注意以下非docx文件不会加载：
+.DS_Store
+国际漫游流量包-201805新版 .doc
+新版港澳台流量包-201906 .doc
+.DS_Store
+违章停机类型及服务口径对应表.doc
+2025-08-08 06:32:29,319 - INFO - /app/data/知识内容/国漫流量包/中国电信APP渠道国际及中国港澳台漫游包客服预案.docx 共加载 89 个原始 element
+2025-08-08 06:32:29,319 - INFO - 成功加载: /app/data/知识内容/国漫流量包/中国电信APP渠道国际及中国港澳台漫游包客服预案.docx
+2025-08-08 06:32:30,259 - INFO - /app/data/知识内容/国漫流量包/关于国际漫游流量包天资费的高速流量配额说明（内部参考).docx 共加载 35 个原始 element
+2025-08-08 06:32:30,259 - INFO - 成功加载: /app/data/知识内容/国漫流量包/关于国际漫游流量包天资费的高速流量配额说明（内部参考).docx
+2025-08-08 06:32:31,598 - INFO - /app/data/知识内容/国漫流量包/关于开展国际漫游业务及港澳台漫游业务暑期促销活动的通知.docx 共加载 38 个原始 element
+2025-08-08 06:32:31,598 - INFO - 成功加载: /app/data/知识内容/国漫流量包/关于开展国际漫游业务及港澳台漫游业务暑期促销活动的通知.docx
+2025-08-08 06:32:32,052 - INFO - /app/data/知识内容/国漫流量包/国际漫游受理思路.docx 共加载 114 个原始 element
+2025-08-08 06:32:32,053 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游受理思路.docx
+2025-08-08 06:32:32,248 - INFO - /app/data/知识内容/国漫流量包/2018年5月1日国际及港澳台地区漫游流量资费调整方案.docx 共加载 13 个原始 element
+2025-08-08 06:32:32,248 - INFO - 成功加载: /app/data/知识内容/国漫流量包/2018年5月1日国际及港澳台地区漫游流量资费调整方案.docx
+2025-08-08 06:32:32,262 - ERROR - 加载 /app/data/知识内容/国漫流量包/.~港澳台流量包-201906 .docx 时出错: not a ZIP archive (so not a DOCX file): '/app/data/知识内容/国漫流量包/.~港澳台流量包-201906\xa0.docx'
+2025-08-08 06:32:32,694 - INFO - /app/data/知识内容/国漫流量包/国际漫游、港澳台漫游拨号方式-语音、短信、数据.docx 共加载 26 个原始 element
+2025-08-08 06:32:32,694 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游、港澳台漫游拨号方式-语音、短信、数据.docx
+2025-08-08 06:32:32,944 - INFO - /app/data/知识内容/国漫流量包/国际漫游流量包-201805新版 .docx 共加载 29 个原始 element
+2025-08-08 06:32:32,945 - INFO - 成功加载: /app/data/知识内容/国漫流量包/国际漫游流量包-201805新版 .docx
+2025-08-08 06:32:33,029 - INFO - /app/data/知识内容/国漫流量包/新版港澳台流量包-201906 .docx 共加载 28 个原始 element
+2025-08-08 06:32:33,029 - INFO - 成功加载: /app/data/知识内容/国漫流量包/新版港澳台流量包-201906 .docx
+2025-08-08 06:32:33,456 - INFO - /app/data/知识内容/国漫流量包/自主漫游业务.docx 共加载 86 个原始 element
+2025-08-08 06:32:33,457 - INFO - 成功加载: /app/data/知识内容/国漫流量包/自主漫游业务.docx
+2025-08-08 06:32:33,672 - INFO - /app/data/知识内容/国漫流量包/2022年8月新增国际港澳台漫游流量包和语音包.docx 共加载 81 个原始 element
+2025-08-08 06:32:33,673 - INFO - 成功加载: /app/data/知识内容/国漫流量包/2022年8月新增国际港澳台漫游流量包和语音包.docx
+2025-08-08 06:32:34,916 - INFO - /app/data/知识内容/安防停机/违章停机类型及服务口径对应表.docx 共加载 195 个原始 element
+2025-08-08 06:32:34,916 - INFO - 成功加载: /app/data/知识内容/安防停机/违章停机类型及服务口径对应表.docx
+2025-08-08 06:32:34,933 - ERROR - 加载 /app/data/知识内容/安防停机/.~安防停机.docx 时出错: not a ZIP archive (so not a DOCX file): '/app/data/知识内容/安防停机/.~安防停机.docx'
+2025-08-08 06:32:35,014 - INFO - /app/data/知识内容/安防停机/反诈模型停机线下复机能力介绍.docx 共加载 43 个原始 element
+2025-08-08 06:32:35,014 - INFO - 成功加载: /app/data/知识内容/安防停机/反诈模型停机线下复机能力介绍.docx
+2025-08-08 06:32:35,205 - INFO - /app/data/知识内容/安防停机/安防停机.docx 共加载 111 个原始 element
+2025-08-08 06:32:35,206 - INFO - 成功加载: /app/data/知识内容/安防停机/安防停机.docx
+2025-08-08 06:32:35,354 - INFO - /app/data/知识内容/安防停机/客服接应安防停机应答口径.docx 共加载 32 个原始 element
+2025-08-08 06:32:35,354 - INFO - 成功加载: /app/data/知识内容/安防停机/客服接应安防停机应答口径.docx
+2025-08-08 06:32:35,354 - INFO - 总共加载了 920 个文档片段
+2025-08-08 06:32:35,354 - INFO - 正在添加文档到向量检索器...
+2025-08-08 06:32:39,723 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:32:57,405 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:32:57,896 - INFO - 正在初始化混合检索器...
+2025-08-08 06:32:57,900 - INFO - 检索器设置完成
+2025-08-08 06:32:57,915 - INFO - 集合 DIANXIN_QA_0808 加载成功
+2025-08-08 06:32:58,480 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:32:58,489 - INFO - 问题我订了香港3流量包，可以改成5天流量包吗？判定类型为为：流量包
+2025-08-08 06:32:58,729 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:32:59,003 - INFO - 大模型思考中...
+2025-08-08 06:33:16,462 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:33:16,464 - INFO - 问题处理成功
+2025-08-08 06:35:04,482 - INFO - 正在初始化关键词检索器 (BM25)...
+2025-08-08 06:35:04,484 - WARNING - 本地chromadb没有查询到: DIANXIN_QA_0807
+2025-08-08 06:35:04,484 - INFO - 
+第一阶段：加载知识库并建立索引
+2025-08-08 06:35:04,484 - ERROR - 加载集合 DIANXIN_QA_0807 失败: 知识库路径不能为空
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 234, in _update_collection_retrieve
+    assert knowledge_base_path, "知识库路径不能为空"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 知识库路径不能为空
+2025-08-08 06:35:04,503 - ERROR - 单问题处理出错: 无法加载集合 DIANXIN_QA_0807 且无缓存可用
+Traceback (most recent call last):
+  File "/app/utils/modules.py", line 199, in get_retriever
+    retriever = self._update_collection_retrieve(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 234, in _update_collection_retrieve
+    assert knowledge_base_path, "知识库路径不能为空"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: 知识库路径不能为空
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 469, in single_qa
+    ensemble_retriever = self.route_retrieve(collection_name, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 298, in route_retrieve
+    retriever = self.get_retriever(collection_name, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/utils/modules.py", line 219, in get_retriever
+    raise RuntimeError(f"无法加载集合 {collection_name} 且无缓存可用") from e
+RuntimeError: 无法加载集合 DIANXIN_QA_0807 且无缓存可用
+2025-08-08 06:35:12,902 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:35:12,903 - INFO - 问题我订了香港3流量包，可以改成5天流量包吗？判定类型为为：流量包
+2025-08-08 06:35:13,130 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:35:13,405 - INFO - 大模型思考中...
+2025-08-08 06:35:29,893 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:35:41,618 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:35:41,619 - INFO - 问题处理成功
+2025-08-08 06:36:27,617 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:36:27,619 - INFO - 问题我订了香港3流量包，可以改成5天流量包吗？判定类型为为：流量包
+2025-08-08 06:36:27,811 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:36:27,964 - INFO - 大模型思考中...
+2025-08-08 06:36:42,923 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:36:42,924 - INFO - 问题处理成功
+2025-08-08 06:42:59,753 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:42:59,756 - INFO - 问题我订了香港3流量包，可以改成5天流量包吗？判定类型为为：流量包
+2025-08-08 06:42:59,991 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 06:43:00,314 - INFO - 大模型思考中...
+2025-08-08 06:43:14,196 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:43:33,600 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 06:43:33,602 - INFO - 问题处理成功
+2025-08-08 07:00:34,588 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:00:34,591 - INFO - 问题{号码标签为大数据保护停机单停（管控复开）时，号码被停机的主要原因有哪些？}判定类型为为：号码安全
+2025-08-08 07:00:34,926 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:00:35,148 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:00:35,618 - INFO - 大模型思考中...
+2025-08-08 07:00:52,400 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:00:52,401 - INFO - 问题处理成功
+2025-08-08 07:00:52,746 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:00:52,747 - INFO - 问题{当号码标签为大数据保护停机单停（管控复开）时，解释口径是什么？}判定类型为为：号码安全
+2025-08-08 07:00:53,075 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:00:53,291 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:00:53,468 - INFO - 大模型思考中...
+2025-08-08 07:01:05,909 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:16,768 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:26,868 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:26,869 - INFO - 问题处理成功
+2025-08-08 07:01:27,191 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:27,192 - INFO - 问题{用户停机标签为专班模型（固话）（管控复开），复开手续有哪些？}判定类型为为：号码安全
+2025-08-08 07:01:27,491 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:27,720 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:01:27,896 - INFO - 大模型思考中...
+2025-08-08 07:01:38,595 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:45,057 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:51,289 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:01:51,290 - INFO - 问题处理成功
+2025-08-08 07:02:17,362 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:17,363 - INFO - 问题{号码标签为大数据保护停机单停（管控复开）时，号码被停机的主要原因有哪些？}判定类型为为：号码安全
+2025-08-08 07:02:17,706 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:17,938 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:02:18,143 - INFO - 大模型思考中...
+2025-08-08 07:02:30,890 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:30,891 - INFO - 问题处理成功
+2025-08-08 07:02:31,222 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:31,223 - INFO - 问题{当号码标签为大数据保护停机单停（管控复开）时，解释口径是什么？}判定类型为为：号码安全
+2025-08-08 07:02:31,484 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:31,704 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:02:31,911 - INFO - 大模型思考中...
+2025-08-08 07:02:41,225 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:50,379 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:59,559 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:59,560 - INFO - 问题处理成功
+2025-08-08 07:02:59,873 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:02:59,874 - INFO - 问题{用户停机标签为专班模型（固话）（管控复开），复开手续有哪些？}判定类型为为：号码安全
+2025-08-08 07:03:00,141 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:00,347 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:03:00,531 - INFO - 大模型思考中...
+2025-08-08 07:03:08,724 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:18,860 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:28,428 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:28,430 - INFO - 问题处理成功
+2025-08-08 07:03:28,775 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:28,776 - INFO - 问题{当有人上门安装黑盒子后，号码被停机，要求复开，怎么办？}判定类型为为：号码安全
+2025-08-08 07:03:29,079 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:29,302 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:03:29,568 - INFO - 大模型思考中...
+2025-08-08 07:03:40,442 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:03:51,745 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:01,949 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:01,950 - INFO - 问题处理成功
+2025-08-08 07:04:02,267 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:02,268 - INFO - 问题{用户对大数据保护停机单停不认可，如何处理？}判定类型为为：号码安全
+2025-08-08 07:04:02,539 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:02,738 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:04:02,905 - INFO - 大模型思考中...
+2025-08-08 07:04:10,781 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:17,454 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:27,831 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:27,832 - INFO - 问题处理成功
+2025-08-08 07:04:28,168 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:28,169 - INFO - 问题{用户标签为超时未使用新入网号卡单停，如果用户不在北京怎么处理？}判定类型为为：号码安全
+2025-08-08 07:04:28,432 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:28,666 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:04:28,985 - INFO - 大模型思考中...
+2025-08-08 07:04:36,130 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:46,759 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:46,760 - INFO - 问题处理成功
+2025-08-08 07:04:47,103 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:47,104 - INFO - 问题{什么是公安涉案双停？}判定类型为为：号码安全
+2025-08-08 07:04:47,316 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:04:47,553 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:04:47,709 - INFO - 大模型思考中...
+2025-08-08 07:05:03,816 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:03,818 - INFO - 问题处理成功
+2025-08-08 07:05:04,149 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:04,150 - INFO - 问题{当用户标签为公安关停双停时，是否可以复机？}判定类型为为：号码安全
+2025-08-08 07:05:04,367 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:04,573 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:05:04,692 - INFO - 大模型思考中...
+2025-08-08 07:05:14,895 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:24,456 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:35,122 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:35,123 - INFO - 问题处理成功
+2025-08-08 07:05:35,438 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:35,439 - INFO - 问题{我自己的号码不欠费，有权利使用这个号码，你们就不应该给我关停，现在怎么办？}判定类型为为：号码安全
+2025-08-08 07:05:35,696 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:35,890 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:05:36,202 - INFO - 大模型思考中...
+2025-08-08 07:05:48,185 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:48,186 - INFO - 问题处理成功
+2025-08-08 07:05:48,518 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:48,519 - INFO - 问题{用户标签为安防停机（专班研判），但提交资料失败，不会提交资料怎么推荐？}判定类型为为：号码安全
+2025-08-08 07:05:48,758 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:48,961 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:05:49,216 - INFO - 大模型思考中...
+2025-08-08 07:05:59,587 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:59,588 - INFO - 问题处理成功
+2025-08-08 07:05:59,930 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:05:59,931 - INFO - 问题{订购港澳台流量包后，流量失效时间如何计算？}判定类型为为：号码安全
+2025-08-08 07:06:00,213 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:00,413 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:06:00,617 - INFO - 大模型思考中...
+2025-08-08 07:06:09,554 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:20,273 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:20,274 - INFO - 问题处理成功
+2025-08-08 07:06:20,617 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:20,618 - INFO - 问题{我订购了68元台湾3日畅享流量包，还没有使用，是否可以退订？}判定类型为为：流量包
+2025-08-08 07:06:20,810 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:06:21,070 - INFO - 大模型思考中...
+2025-08-08 07:06:30,701 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:41,080 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:49,794 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:49,795 - INFO - 问题处理成功
+2025-08-08 07:06:50,131 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:06:50,132 - INFO - 问题{订购得台湾流量包在内地打开此包后是否会走流量？}判定类型为为：流量包
+2025-08-08 07:06:50,356 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:06:50,551 - INFO - 大模型思考中...
+2025-08-08 07:07:02,061 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:02,062 - INFO - 问题处理成功
+2025-08-08 07:07:02,373 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:02,374 - INFO - 问题{流量包生效后的短信内容是什么？}判定类型为为：号码安全
+2025-08-08 07:07:02,612 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:02,792 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:02,977 - INFO - 问题处理成功
+2025-08-08 07:07:03,221 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:03,222 - INFO - 问题{如订购了68元香港3日畅享流量包，在流量包即将失效时，会收到短信吗？}判定类型为为：流量包
+2025-08-08 07:07:03,357 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:03,587 - INFO - 大模型思考中...
+2025-08-08 07:07:13,072 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:13,073 - INFO - 问题处理成功
+2025-08-08 07:07:13,392 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:13,393 - INFO - 问题{169元南欧7日畅享流量包适用哪些漫游地？}判定类型为为：流量包
+2025-08-08 07:07:13,587 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:13,906 - INFO - 大模型思考中...
+2025-08-08 07:07:25,825 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:25,826 - INFO - 问题处理成功
+2025-08-08 07:07:26,139 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:26,140 - INFO - 问题{我要去葡萄牙玩，可以订购哪些流量包？}判定类型为为：流量包
+2025-08-08 07:07:26,374 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:26,571 - INFO - 大模型思考中...
+2025-08-08 07:07:38,603 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:38,666 - INFO - 问题处理成功
+2025-08-08 07:07:39,745 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:39,746 - INFO - 问题{我订购了99元中欧4日畅享流量包，订购后就直接扣款吗？}判定类型为为：流量包
+2025-08-08 07:07:40,002 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:41,572 - INFO - 大模型思考中...
+2025-08-08 07:07:56,542 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:56,573 - INFO - 问题处理成功
+2025-08-08 07:07:56,959 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:56,960 - INFO - 问题{上周订购了169元西欧7日畅享流量包，现在不去了，可以退款吗？}判定类型为为：号码安全
+2025-08-08 07:07:57,258 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:07:57,461 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:07:58,274 - INFO - 大模型思考中...
+2025-08-08 07:08:03,542 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:08:08,228 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:08:14,117 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:08:14,118 - INFO - 问题处理成功
+2025-08-08 07:08:14,465 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:08:14,466 - INFO - 问题{我手机号是新买的，还没订购任何套餐，现在要出国玩，订购169元北欧7日畅享流量包有什么要求吗？}判定类型为为：流量包
+2025-08-08 07:08:14,711 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-08 07:08:14,972 - INFO - 大模型思考中...
+2025-08-08 07:08:34,261 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 07:08:34,262 - INFO - 问题处理成功
+2025-08-11 05:40:39,603 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:40:39,607 - INFO - 问题{号码标签为大数据保护停机单停（管控复开）时，号码被停机的主要原因有哪些？}判定类型为为：号码安全
+2025-08-11 05:40:39,941 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:40:40,180 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:40:40,686 - INFO - 大模型思考中...
+2025-08-11 05:40:56,708 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:40:56,709 - INFO - 问题处理成功
+2025-08-11 05:40:57,028 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:40:57,029 - INFO - 问题{当号码标签为大数据保护停机单停（管控复开）时，解释口径是什么？}判定类型为为：号码安全
+2025-08-11 05:40:57,293 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:40:57,503 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:40:57,675 - INFO - 大模型思考中...
+2025-08-11 05:41:10,538 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:21,671 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:30,982 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:30,983 - INFO - 问题处理成功
+2025-08-11 05:41:31,302 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:31,303 - INFO - 问题{用户停机标签为专班模型（固话）（管控复开），复开手续有哪些？}判定类型为为：号码安全
+2025-08-11 05:41:31,569 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:31,768 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:41:31,956 - INFO - 大模型思考中...
+2025-08-11 05:41:37,795 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:45,914 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:53,968 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:53,969 - INFO - 问题处理成功
+2025-08-11 05:41:54,317 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:54,318 - INFO - 问题{当有人上门安装黑盒子后，号码被停机，要求复开，怎么办？}判定类型为为：号码安全
+2025-08-11 05:41:54,612 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:41:54,822 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:41:55,087 - INFO - 大模型思考中...
+2025-08-11 05:42:06,859 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:18,639 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:32,713 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:32,714 - INFO - 问题处理成功
+2025-08-11 05:42:33,020 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:33,022 - INFO - 问题{用户对大数据保护停机单停不认可，如何处理？}判定类型为为：号码安全
+2025-08-11 05:42:33,292 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:33,509 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:42:33,669 - INFO - 大模型思考中...
+2025-08-11 05:42:41,533 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:42:53,099 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:01,876 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:01,877 - INFO - 问题处理成功
+2025-08-11 05:43:02,205 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:02,206 - INFO - 问题{用户标签为超时未使用新入网号卡单停，如果用户不在北京怎么处理？}判定类型为为：号码安全
+2025-08-11 05:43:02,492 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:02,692 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:43:03,016 - INFO - 大模型思考中...
+2025-08-11 05:43:10,122 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:17,460 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:24,988 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:24,989 - INFO - 问题处理成功
+2025-08-11 05:43:25,348 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:25,349 - INFO - 问题{什么是公安涉案双停？}判定类型为为：号码安全
+2025-08-11 05:43:25,571 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:43:25,772 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:43:25,929 - INFO - 大模型思考中...
+2025-08-11 05:43:43,811 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:13,937 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 307 Temporary Redirect"
+2025-08-11 05:44:13,979 - INFO - HTTP Request: POST https://cloud.infini-ai.com/application/error/inference "HTTP/1.1 405 Not Allowed"
+2025-08-11 05:44:13,980 - ERROR - 调用LLM时发生错误: <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.29.0</center>
+</body>
+</html>
+2025-08-11 05:44:13,980 - ERROR - 单问题处理出错: 处理问题时出错: 调用LLM时发生错误: <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.29.0</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "/app/kag_app.py", line 116, in _call_llm
+    answer = self.llm.invoke(prompt_)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain/chat_models/base.py", line 685, in invoke
+    return self._model(config).invoke(input, config=config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+  File "/usr/local/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1131, in _generate
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.29.0</center>
+</body>
+</html>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/kag_app.py", line 476, in single_qa
+    answer = self._call_llm(prompt_)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 124, in _call_llm
+    raise ValueError(f"调用LLM时发生错误: {e}")
+ValueError: 调用LLM时发生错误: <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.29.0</center>
+</body>
+</html>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/main.py", line 136, in single_question_answering
+    result = kag_server.single_qa(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/kag_app.py", line 491, in single_qa
+    raise ValueError(f"处理问题时出错: {e}")
+ValueError: 处理问题时出错: 调用LLM时发生错误: <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.29.0</center>
+</body>
+</html>
+2025-08-11 05:44:32,127 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:32,128 - INFO - 问题{号码标签为大数据保护停机单停（管控复开）时，号码被停机的主要原因有哪些？}判定类型为为：号码安全
+2025-08-11 05:44:32,451 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:32,681 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:44:32,881 - INFO - 大模型思考中...
+2025-08-11 05:44:51,002 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:51,003 - INFO - 问题处理成功
+2025-08-11 05:44:51,337 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:51,338 - INFO - 问题{当号码标签为大数据保护停机单停（管控复开）时，解释口径是什么？}判定类型为为：号码安全
+2025-08-11 05:44:51,612 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:44:51,816 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:44:51,988 - INFO - 大模型思考中...
+2025-08-11 05:45:01,160 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:14,710 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:25,223 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:25,224 - INFO - 问题处理成功
+2025-08-11 05:45:25,568 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:25,569 - INFO - 问题{用户停机标签为专班模型（固话）（管控复开），复开手续有哪些？}判定类型为为：号码安全
+2025-08-11 05:45:25,833 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:26,044 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:45:26,186 - INFO - 大模型思考中...
+2025-08-11 05:45:34,430 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:42,620 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:52,009 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:52,010 - INFO - 问题处理成功
+2025-08-11 05:45:52,331 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:52,332 - INFO - 问题{当有人上门安装黑盒子后，号码被停机，要求复开，怎么办？}判定类型为为：号码安全
+2025-08-11 05:45:52,610 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:45:52,799 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:45:53,009 - INFO - 大模型思考中...
+2025-08-11 05:46:04,281 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:16,012 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:28,362 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:28,363 - INFO - 问题处理成功
+2025-08-11 05:46:28,682 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:28,684 - INFO - 问题{用户对大数据保护停机单停不认可，如何处理？}判定类型为为：号码安全
+2025-08-11 05:46:28,957 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:29,164 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:46:29,313 - INFO - 大模型思考中...
+2025-08-11 05:46:36,983 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:47,685 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:55,841 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:55,842 - INFO - 问题处理成功
+2025-08-11 05:46:56,159 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:56,160 - INFO - 问题{用户标签为超时未使用新入网号卡单停，如果用户不在北京怎么处理？}判定类型为为：号码安全
+2025-08-11 05:46:56,430 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:46:56,658 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:46:56,960 - INFO - 大模型思考中...
+2025-08-11 05:47:04,938 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:13,160 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:21,966 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:21,967 - INFO - 问题处理成功
+2025-08-11 05:47:22,315 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:22,316 - INFO - 问题{什么是公安涉案双停？}判定类型为为：号码安全
+2025-08-11 05:47:22,538 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:22,754 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:47:22,864 - INFO - 大模型思考中...
+2025-08-11 05:47:28,283 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:28,284 - INFO - 问题处理成功
+2025-08-11 05:47:28,626 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:28,627 - INFO - 问题{当用户标签为公安关停双停时，是否可以复机？}判定类型为为：号码安全
+2025-08-11 05:47:28,850 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:29,074 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:47:29,187 - INFO - 大模型思考中...
+2025-08-11 05:47:42,559 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:47:53,138 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:01,385 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:01,386 - INFO - 问题处理成功
+2025-08-11 05:48:01,720 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:01,721 - INFO - 问题{我自己的号码不欠费，有权利使用这个号码，你们就不应该给我关停，现在怎么办？}判定类型为为：号码安全
+2025-08-11 05:48:01,978 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:02,192 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:48:02,498 - INFO - 大模型思考中...
+2025-08-11 05:48:15,180 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:15,181 - INFO - 问题处理成功
+2025-08-11 05:48:15,487 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:15,488 - INFO - 问题{用户标签为安防停机（专班研判），但提交资料失败，不会提交资料怎么推荐？}判定类型为为：号码安全
+2025-08-11 05:48:15,737 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:15,973 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:48:16,130 - INFO - 大模型思考中...
+2025-08-11 05:48:25,008 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:25,010 - INFO - 问题处理成功
+2025-08-11 05:48:25,323 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:25,324 - INFO - 问题{订购港澳台流量包后，流量失效时间如何计算？}判定类型为为：号码安全
+2025-08-11 05:48:25,608 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:25,806 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:48:26,013 - INFO - 大模型思考中...
+2025-08-11 05:48:39,052 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:39,053 - INFO - 问题处理成功
+2025-08-11 05:48:39,394 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:39,396 - INFO - 问题{我订购了68元台湾3日畅享流量包，还没有使用，是否可以退订？}判定类型为为：流量包
+2025-08-11 05:48:39,596 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:48:39,845 - INFO - 大模型思考中...
+2025-08-11 05:48:48,354 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:48:58,351 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:08,174 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:08,175 - INFO - 问题处理成功
+2025-08-11 05:49:08,553 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:08,554 - INFO - 问题{订购得台湾流量包在内地打开此包后是否会走流量？}判定类型为为：流量包
+2025-08-11 05:49:08,762 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:49:08,937 - INFO - 大模型思考中...
+2025-08-11 05:49:22,288 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:39,732 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:39,733 - INFO - 问题处理成功
+2025-08-11 05:49:40,058 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:40,059 - INFO - 问题{流量包生效后的短信内容是什么？}判定类型为为：号码安全
+2025-08-11 05:49:40,291 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:40,493 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:49:40,666 - INFO - 问题处理成功
+2025-08-11 05:49:40,906 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:40,907 - INFO - 问题{如订购了68元香港3日畅享流量包，在流量包即将失效时，会收到短信吗？}判定类型为为：流量包
+2025-08-11 05:49:41,051 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:49:41,295 - INFO - 大模型思考中...
+2025-08-11 05:49:54,852 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:54,853 - INFO - 问题处理成功
+2025-08-11 05:49:55,201 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:49:55,202 - INFO - 问题{169元南欧7日畅享流量包适用哪些漫游地？}判定类型为为：流量包
+2025-08-11 05:49:55,408 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:49:55,715 - INFO - 大模型思考中...
+2025-08-11 05:50:05,208 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:05,209 - INFO - 问题处理成功
+2025-08-11 05:50:05,537 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:05,538 - INFO - 问题{我要去葡萄牙玩，可以订购哪些流量包？}判定类型为为：流量包
+2025-08-11 05:50:05,734 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:50:05,926 - INFO - 大模型思考中...
+2025-08-11 05:50:18,196 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:18,197 - INFO - 问题处理成功
+2025-08-11 05:50:18,505 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:18,506 - INFO - 问题{我订购了99元中欧4日畅享流量包，订购后就直接扣款吗？}判定类型为为：流量包
+2025-08-11 05:50:18,711 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:50:18,945 - INFO - 大模型思考中...
+2025-08-11 05:50:39,280 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:39,281 - INFO - 问题处理成功
+2025-08-11 05:50:39,603 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:39,604 - INFO - 问题{上周订购了169元西欧7日畅享流量包，现在不去了，可以退款吗？}判定类型为为：号码安全
+2025-08-11 05:50:39,905 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:40,097 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:50:40,418 - INFO - 大模型思考中...
+2025-08-11 05:50:46,109 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:51,734 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:57,601 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:57,602 - INFO - 问题处理成功
+2025-08-11 05:50:57,943 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbkclcrq25pwsz7o/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:50:57,944 - INFO - 问题{我手机号是新买的，还没订购任何套餐，现在要出国玩，订购169元北欧7日畅享流量包有什么要求吗？}判定类型为为：流量包
+2025-08-11 05:50:58,141 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbknrlelj7eldfyl/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-11 05:50:58,392 - INFO - 大模型思考中...
+2025-08-11 05:51:19,219 - INFO - HTTP Request: POST https://cloud.infini-ai.com/AIStudio/inference/api/if-dbhqjstkgnhauwd2/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-11 05:51:19,220 - INFO - 问题处理成功
